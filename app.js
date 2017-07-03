@@ -1,3 +1,10 @@
+/*********************************************** 
+  CS572 - MODERN WEB APPLICATION PROGRAMMING
+  MUM
+  Student: #985803
+  Lecture 5 / Exercise 
+************************************************/
+
 var express = require('express');
 var path = require('path');
 var favicon = require('serve-favicon');
