@@ -5,7 +5,16 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
+		<h2>Subsctiption form please enter your email: </h2>
+	    <form action="/newsletter" method="POST">
+	    <input type="hidden" name="_csrf" value="<%= csrfToken %>">
+	    <% if (errors) { %>
+			<p style="color: red;">required!</p>
+	  	<% } %>
+	    <label>Email address:</label><input type="text" name="email">
+	    <br/>
+
+	    <input type="submit" value="Submit">
+	    </form>
   </body>
 </html>
